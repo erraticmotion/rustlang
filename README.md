@@ -1,0 +1,2 @@
+# rustlang
+RUST scratch pad
