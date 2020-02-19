@@ -1,2 +1,2 @@
-# rustlang
-RUST scratch pad
+# RUST
+Learning the RUST langauge
