@@ -1,0 +1,3 @@
+[submodule "lib/blog_os"]
+	path = lib/blog_os
+	url = https://github.com/phil-opp/blog_os

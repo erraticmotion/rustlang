@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <title>Hello in RUST</title>
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+    <h1 class="title">Hello in RUST</h1>
+    <nav id="TOC"><ul>
+<li><a href="#compile-and-execute-hello-using-cargo">0.1 Compile and execute <code>Hello</code> using Cargo</a><ul></ul></li>
+<li><a href="#compile-and-execute-hello-using-rustc">0.2 Compile and execute `Hello' using rustc</a><ul></ul></li>
+<li><a href="#build-and-run-hello-in-a-container">0.3 Build and Run <code>Hello</code> in a container</a><ul></ul></li></ul></nav><p>RUST <code>Hello World</code> on Linux AMD64 </p>
+<h2 id="compile-and-execute-hello-using-cargo" class="section-header"><a href="#compile-and-execute-hello-using-cargo">0.1 Compile and execute <code>Hello</code> using Cargo</a></h2>
+<pre><code class="language-console">cargo new hello
+cd hello
+cargo build
+cargo run
+</code></pre>
+<h2 id="compile-and-execute-hello-using-rustc" class="section-header"><a href="#compile-and-execute-hello-using-rustc">0.2 Compile and execute `Hello' using rustc</a></h2>
+<pre><code class="language-console">cd src
+./rrun.sh main
+</code></pre>
+<h2 id="build-and-run-hello-in-a-container" class="section-header"><a href="#build-and-run-hello-in-a-container">0.3 Build and Run <code>Hello</code> in a container</a></h2>
+<pre><code class="language-console"># Build on the platform
+docker build -t erraticmotion:hello .
+
+# Displayes the runtime size.
+docker images erraticmotion:hello
+
+# Runs a container based on the created image
+docker run erraticmotion:hello
+
+# Removes all containers.
+docker rm $(docker ps -a -q)
+</code></pre>
+
+    
+</body>
+</html>
