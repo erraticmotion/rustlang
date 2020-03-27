@@ -12,7 +12,7 @@ cc --version
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rls rust-analysis rust-src
 # enable Rust language integration for VSCode
-```console
+```
 
 [book]: https://www.amazon.co.uk/Rust-Programming-Language-Steve-Klabnik/dp/1718500440/ref=sr_1_1
 [rust]: https://www.amazon.co.uk/Programming-Rust-Jim-Blandy/dp/1491927283/ref=sr_1_2
